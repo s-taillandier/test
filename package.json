@@ -1,0 +1,60 @@
+{
+  "name": "models.autodesk.io",
+  "description": "A Node.js server to create translate 2D/3D models to the Autodesk Viewer format without the need to create a server yourself",
+  "homepage": "http://around-the-corner.typepad.com/",
+  "version": "1.2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyrillef/models.autodesk.io"
+  },
+  "bugs": {
+    "url": "https://github.com/cyrillef/models.autodesk.io/issues"
+  },
+  "author": "Cyrille Fauvel",
+  "contributors": [
+    "Cyrille Fauvel <cyrille@autodesk.com>"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 6.3.1",
+    "npm": ">= 3.10.3"
+  },
+  "scripts": {
+    "start": "node start.js",
+    "test": "node_modules/.bin/mocha --require test/support/env --reporter spec --bail --check-leaks test/"
+  },
+  "keywords": [
+    "express",
+    "framework",
+    "lmv",
+    "forge",
+    "autodesk",
+    "web",
+    "rest",
+    "restful",
+    "router",
+    "app",
+    "api"
+  ],
+  "dependencies": {
+    "body-parser": "*",
+    "connect-multiparty": "*",
+    "crypto": "0.0.3",
+    "es6-promisify": "*",
+    "express": "*",
+    "forge-model-derivative": "*",
+    "forge-oauth2": "*",
+    "forge-oss": "*",
+    "gen-uid": "*",
+    "path": "*",
+    "serve-favicon": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "supertest": "*",
+    "chai": "*",
+    "expect.js": "*"
+  },
+  "optionalDependencies": {}
+}
